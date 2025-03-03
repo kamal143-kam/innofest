@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOFEST '25 Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(10, 10, 20, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+        }
+        h1 {
+            font-size: 35px;
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+        .info-box {
+            background: rgba(0, 0, 50, 0.8);
+            padding: 15px;
+            border-radius: 20px;
+            margin: 20px auto;
+            max-width: 650px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            text-align: left;
+            
+        }
+
+        input:hover {
+            border-color: #28a745; /* Green border on hover */
+            }
+        
+        input:focus {
+            outline: none; /* Removes default outline */
+            border: 2px solid #ff0000; /* Red border when clicked */
+            }
+
+        .info-box p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #00ffea;
+        }
+        .info-box p i {
+            color: limegreen;
+            margin-right: 5px;
+        }
+        label {
+            display: block;
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: left;
+            color: #00ffea;
+        }
+        input, select {
+            width: 95%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            background: #222;
+            color: white;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+        .payment-section {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 18px;
+            color: #00ffea;
+        }
+        .payment-section a {
+            color: cyan;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .payment-section a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            background: cyan;
+            color: black;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 0 0 10px black;
+            border: none;
+        }
+        .btn:hover {
+            background: #00ccff;
+        }
+        .read-carefully {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 16px;
+            color: #00ffea;
+            background: rgba(0, 0, 50, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        .read-carefully ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .read-carefully li {
+            font-size: 14px;
+            padding: 5px 0;
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+        .read-carefully li::before {
+            content: "⚡";
+            color: yellow;
+            text-shadow: 0 0 8px yellow;
+            font-size: 16px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>✨ INNOFEST '25 ✨</h1>
+
+    <div class="container">
+        <h2 style="color: cyan;">Registration Form</h2>
+        
+        <div class="info-box">
+            <p><i>✔</i> Entry Fee: ₹200</p>
+            <p><i>✔</i> Payment Methods: Google Pay / PhonePe / Paytm / UPI</p>
+            <p><i>✔</i> Upload a payment screenshot after payment.</p>
+            <p><i>✔</i> Contact us for queries: <a href="mailto:innofest25@gmail.com" style="color: cyan; text-decoration: none;">innofest25@gmail.com</a> / +91 75399 49173</p>
+        </div>
+
+        <form id="registrationForm" enctype="multipart/form-data">
+            <label>Full Name *</label>
+            <input type="text" name="name" required>
+
+            <label>College Name *</label>
+            <input type="text" name="college" required>
+
+            <label>Department Name *</label>
+            <input type="text" name="department" required>
+
+            <label>Year *</label>
+            <select name="year" required>
+                <option value="1st Year">I Year</option>
+                <option value="2nd Year">II Year</option>
+                <option value="3rd Year">III Year</option>
+                <option value="4th Year">IV Year</option>
+            </select>
+
+            <label>Contact Number *</label>
+            <input type="text" name="contact" required>
+
+            <label>Email ID *</label>
+            <input type="email" name="email" required>
+
+            <div class="payment-section">
+                <label>Payment (upload the screenshot *) <a href="https://tinyurl.com/2zehp2yf" target="_blank">click here to pay</a> *</label>
+            </div>
+            <input type="file" name="screenshot" id="screenshot" accept="image/*" required>
+
+            <label>Agree to Terms & Conditions *</label>
+            <input type="checkbox" name="agree" required> 
+            <center>I Agree</center>
+
+            <div class="read-carefully">
+                <strong>Read Carefully:</strong>
+                <ul>
+                    <li>Transport will be provided from old bus stand at 9:00 AM</li>
+                    <li>Snacks and Refreshments will be provided</li>
+                    <li>Lunch will be provided to every participant</li>
+                </ul>
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            var submitButton = document.querySelector(".btn");
+            submitButton.disabled = true;
+            submitButton.innerText = "Submitting...";
+
+            var formData = new FormData(this);
+            var fileInput = document.getElementById("screenshot").files[0];
+
+            if (!fileInput) {
+                alert("Please upload a screenshot!");
+                submitButton.disabled = false;
+                submitButton.innerText = "Submit";
+                return;
+            }
+
+            var reader = new FileReader();
+            reader.readAsDataURL(fileInput);
+            reader.onloadend = function() {
+                formData.append("screenshot", reader.result);
+
+                fetch("https://script.google.com/macros/s/AKfycbxfOp316naX0aeEfJ7hXd0YEuBlLikN5grT2qSgssXUh-nG5iwxCZ-9YKgEAkWap6er/exec", {
+                    method: "POST",
+                    body: formData
+                })
+                .then(response => response.text())
+                .then(data => {
+                    alert("Registration Successful!");
+                    document.getElementById("registrationForm").reset();
+                    submitButton.disabled = false;
+                    submitButton.innerText = "Submit";
+                });
+            };
+        });
+    </script>
+
+</body>
+</html>
